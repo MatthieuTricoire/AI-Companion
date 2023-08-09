@@ -16,14 +16,14 @@ model Category {
 }
 
 model Companion {
-  id          String @id @default(uuid())
-  userId      String
-  userName    String
-  src         String
-  name        String @db.Text
-  description String
-  instruction String @db.Text
-  seed        String @db.Text
+  id           String @id @default(uuid())
+  userId       String
+  userName     String
+  src          String
+  name         String @db.Text
+  description  String
+  instructions String @db.Text
+  seed         String @db.Text
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
